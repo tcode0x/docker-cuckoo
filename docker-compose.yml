@@ -60,7 +60,7 @@ services:
   #     - cuckoo
 
   mongo:
-    image: mongo
+    image: mongo:3.6
     ports:
       - 27017
     volumes:
@@ -89,7 +89,7 @@ services:
     mem_limit: 1g
 
   postgres:
-    image: postgres
+    image: postgres:9.6
     ports:
       - 5432
     environment:
